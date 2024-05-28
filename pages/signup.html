@@ -1,0 +1,66 @@
+<!--Aman Mishra
+    CST2120 
+    13/12/2023 
+    Coursework #1 
+
+    This is the sign-up HTML page for Needle Threaders web game. This is where a new user can
+    create a new account to play the game and have their scores recorded. If they wish to simply
+	play the game anonymously, they can click "Play as guest" and not have their scores
+	recorded.-->
+<html>
+    <head>
+        <title>CST2120 Coursework 1 | Sign Up</title>
+        <link rel="stylesheet" href="../css/signupStyle.css" />
+        <link rel="stylesheet" href="../css/headerStyle.css" />
+    </head>
+
+    <body>
+        <!-- Navigation bar and game title. -->
+        <div id="header">
+            <div id="gameTitle">Needle Threaders</div>
+            <div id="optionsBox">
+                <table>
+                    <tr>
+                        <td><a href="../index.html" class="userControl">Sign In</a></td>
+                        <td><a href="game.html">Play</a></td>
+                        <td><a href="rules.html">Game Rules</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="signup.html" class="userControl">Sign Up</a></td>
+                        <td><a href="highScores.html">High Scores</a></td>
+                        <td><a href="signOut.html" id="userClear">Sign Out</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- New user registration form -->
+        <div id="workFrame">
+            <form id="signUp" onsubmit="return register()">
+                <h1>Sign Up!</h1>
+                <label for="fullname">Full Name:</label><br />
+                <input type="text" id="fullname" name="fullname" /><br />
+                <label for="username">Username:</label><br />
+                <input type="text" id="username" name="username" /><br />
+                <label for="password">Password:</label><br />
+                <input type="password" id="password" name="password" /><br />
+                <label for="region">Region:</label>
+                <select id="region" name="region">
+                    <option value="NA">NA</option>
+                    <option value="EU">EU</option>
+                    <option value="SA">SA</option>
+                    <option value="CN">CN</option>
+                    <option value="TW">TW</option>
+                    <option value="SEA">SEA</option>
+                    <option value="MEA">MEA</option>
+                    <option value="OCE">OCE</option>
+                </select>
+                <br />
+                <input id="submit" type="submit" value="Sign Up" />
+            </form>
+        </div>
+
+        <script src="../js/signUp.js"></script>
+        <script src="../js/navBar.js"></script>
+    </body>
+</html>
