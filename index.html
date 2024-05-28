@@ -1,0 +1,52 @@
+<!--Aman Mishra
+    CST2120 
+    13/12/2023 
+    Coursework #1 
+
+    This is the welcome HTML page for Needle Threaders web game. This page is also where a user can
+    sign into their account. If they wish to simply play the game anonymously, they can click 
+	"Play as guest" and not have their scores recorded.-->
+<html>
+    <head>
+        <title>CST2120 Coursework 1 | Welcome</title>
+        <link rel="stylesheet" href="css/indexStyle.css" />
+        <link rel="stylesheet" href="css/headerStyle.css" />
+    </head>
+
+    <body>
+        <!-- Navigation bar and game title -->
+        <div id="header">
+            <div id="gameTitle">Needle Threaders</div>
+            <div id="optionsBox">
+                <table>
+                    <tr>
+                        <td><a href="index.html" class="userControl">Sign In</a></td>
+                        <td><a href="pages/game.html">Play</a></td>
+                        <td><a href="pages/rules.html">Game Rules</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="pages/signup.html" class="userControl">Sign Up</a></td>
+                        <td><a href="pages/highScores.html">High Scores</a></td>
+                        <td><a href="pages/signOut.html" id="userClear">Sign Out</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Returning user sign-in form -->
+        <div id="workFrame">
+            <form id="logIn" onsubmit="return logIn()">
+                <h1>Sign In!</h1>
+                <label for="username">Username:</label><br />
+                <input type="text" id="username" name="username" required /><br />
+                <label for="password">Password:</label><br />
+                <input type="password" id="password" name="password" required /><br />
+                <br />
+                <input id="submit" type="submit" value="Sign In" />
+            </form>
+
+            <script src="js/signIn.js"></script>
+            <script src="js/navBar.js"></script>
+        </div>
+    </body>
+</html>
