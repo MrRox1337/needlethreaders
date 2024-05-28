@@ -1,0 +1,63 @@
+/*  Aman Mishra
+    CST2120 
+    03/11/2023 
+    Coursework #1 
+
+    This is the CSS for the common elements of every HTML page of the
+	Needle Threaders game. */
+
+/* Tags */
+body {
+	background-color: beige;
+	padding: 10% 0 0 0;
+	margin: 0;
+	cursor: url("../imgs/vehicle-1-preview.gif");
+}
+
+a {
+	text-decoration: none;
+	color: brown;
+}
+
+a[disabled] {
+	color: gray;
+	opacity: 0.5;
+	cursor: not-allowed
+}
+
+/* Element IDs */
+#header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 10%;
+	background-color: bisque;
+	font-family: "Courier New", Courier, monospace;
+}
+
+#optionsBox {
+	background-color: blanchedalmond;
+	margin-left: 60%;
+	height: 100%;
+}
+
+#optionsBox table {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	border-collapse: collapse;
+	border-style: hidden;
+}
+
+#optionsBox td {
+	border: 1px solid burlywood;
+}
+
+#gameTitle {
+	width: 60%;
+	float: left;
+	position: relative;
+	font-size: 4.5vw;
+	font-weight: bolder;
+	text-align: center;
+}

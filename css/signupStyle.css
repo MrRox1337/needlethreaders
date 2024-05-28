@@ -1,0 +1,26 @@
+/*  Aman Mishra
+    CST2120 
+    13/12/2023 
+    Coursework #1 
+
+    This is the CSS for the sign-up page of the Needle Threaders game. */
+
+/* Element IDs */
+#workframe {
+	font-family: "Lucida Sans Unicode", Arial, sans-serif;
+	background-color: azure;
+	width: 200px;
+	height: 400px;
+	margin: 5% 0 0 45%;
+	border-radius: 10%;
+	padding: 10px 0 0 20px;
+}
+
+#region {
+	margin: 10px 0 0 15px;
+}
+
+#submit {
+	float: right;
+	margin: 30px 40px 0 0;
+}

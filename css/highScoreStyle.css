@@ -1,0 +1,39 @@
+/*  Aman Mishra
+    CST2120 
+    13/12/2023 
+    Coursework #1 
+
+    This is the CSS for the high scores page of the Needle Threaders game. */
+
+/* Element IDs */
+#workframe {
+	font-family: "Lucida Sans Unicode", Arial, sans-serif;
+	background-color: azure;
+	text-align: center;
+	width: 300px;
+	height: 300px;
+	margin: 5% 0 0 45%;
+	border-radius: 10%;
+	padding: 1px 20px 0 20px;
+}
+
+#workframe h1 {
+	position: relative;
+}
+
+#board {
+	text-align: center;
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+#board th,
+#board td {
+	width: 33%;
+	padding: 4px;
+}
+
+#board th {
+	border-bottom: 2px solid black;
+}

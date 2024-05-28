@@ -1,0 +1,48 @@
+/*  Aman Mishra
+    CST2120 
+    13/12/2023 
+    Coursework #1 
+
+    This is the CSS for the playable game page of the Needle Threaders game. */
+
+/* Tags */
+h1 {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 2.5vw;
+	text-align: center;
+}
+
+/* Element IDs */
+#workFrame {
+	font-family: "Lucida Sans Unicode", Arial, sans-serif;
+	background-color: azure;
+	text-align: center;
+	width: 880px;
+	height: 500px;
+	margin: 2% 0 0 25%;
+	border-radius: 10%;
+}
+
+#gameCanvas {
+	cursor: none;
+	border-radius: 10%;
+	background-image: url("../imgs/gameBackdrop.gif");
+}
+
+#scoresWindow {
+	position: fixed;
+	bottom: 50%;
+	left: 10px;
+	text-align: center;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* Classes */
+.scoreBox {
+	width: 200px;
+	height: 50px;
+	border: 2px solid burlywood;
+	background-color: blanchedalmond;
+	color: brown;
+	line-height: 50px;
+}
